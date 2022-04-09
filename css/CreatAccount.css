@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBE4CA;
+}
+
+.display {
+    background: #443845;
+    border-radius: 15px;
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    left: 20px;
+}
+
+.container {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+form input {
+
+    background-color: #443845;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 250px;
+    padding: 20px;
+
+}
+
+form label h3 {
+    display: inline;
+    text-align: right;
+    border-left: 50px #FBE4CA solid;
+
+}
+
+button {
+    border: none;
+    border-radius: 40px;
+    background-color: #443845;
+    color: #FBE4CA;
+    width: 90px;
+    height: 45px;
+    position: absolute;
+    right: 230px;
+    cursor: pointer;
+
+}
+
+.english-name h3 {
+    border-left: 1px #FBE4CA solid;
+}
+
+.rank h3 {
+    border-left: 40px #FBE4CA solid;
+}
+
+/* test */
+.item {
+    margin: 10px;
+    width: 90px;
+    height: 10%;
+    background: #FBE4CA;
+    border-radius: 20px;
+    position: relative;
+}
+
+.refusal-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: red;
+    font-size: 23px;
+    position: absolute;
+    left: 250px;
+    top: 23%;
+
+}
+
+.accept-btn {
+    cursor: pointer;
+    font-size: 20px;
+    background: #6Bee3d;
+    width: 40px;
+    height: 45px;
+    position: absolute;
+
+    border: none;
+    border-radius: 20px;
+    color: #443845;
+}
+
+.name-item {
+    text-decoration: none;
+    color: #443845;
+    position: absolute;
+    font-size: 23px;
+    top: 20px;
+    right: 20px;
+
+}
+
+
+/* test */
