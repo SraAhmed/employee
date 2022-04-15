@@ -1,5 +1,5 @@
 CREATE TABLE admin (
-                         id int(15) NOT NULL,
+                        id INT(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
                          email varchar(255) NOT NULL,
                          password varchar(75) NOT NULL
 
@@ -16,3 +16,6 @@ state int(11) NOT NULL,
 section varchar(100) NOT NULL, 
 noMobile int(11) NOT NULL  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `admin` ADD UNIQUE(`email`); 
+INSERT INTO `admin`(`email`, `password`) VALUES ('admin1@admin.com',1234); 
