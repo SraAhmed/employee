@@ -6,12 +6,13 @@ CREATE TABLE admin (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE employee (
-id int(15) NOT NULL,
+`approval` TINYINT(1) NOT NULL DEFAULT '0',
+`id` INT(15) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 fullName varchar(100) NOT NULL,
 nameEng varchar(100) NOT NULL,
-  num int(11) NOT NULL,
- operatorNum int(11) NULL,
- state int(11) NOT NULL, 
-   section varchar(100) NOT NULL, 
-     noMobile int(11) NOT NULL  
-     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+num int(11) NOT NULL,
+operatorNum int(11) NULL,
+state int(11) NOT NULL, 
+section varchar(100) NOT NULL, 
+noMobile int(11) NOT NULL  
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
