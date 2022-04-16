@@ -44,7 +44,10 @@
                     session_start();
                     session_unset();
                     $_SESSION["email"] = $rows["email"];
-                    header("Location: adminpage.php");
+                    if ($email == 'admin1@admin.com' && $pass == 1234)
+                        header("Location: adminpage.php");
+                    else if ($email == 'admin2@admin.com' && $pass == 123)
+                        header("Location: admin2.php");
                 }
             }
         }

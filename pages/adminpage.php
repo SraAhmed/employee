@@ -19,12 +19,9 @@
                 <h3>النماذج الواردة</h3>
             </a></div>
         <div class="btn"><a href="accept_form.php">
-                <h3>النماذج المقبولة</h3>
-            </a></div>
-        <div class="btn"><a href="../pages/rejected_form.php">
-                <h3>النماذج المرفوضة</h3>
-            </a></div>
-    </div>
+                <h3>النماذج السابقة</h3>
+
+        </div>
 </body>
 
 </html>

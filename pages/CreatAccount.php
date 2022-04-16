@@ -99,8 +99,9 @@
     }
     ?>
 
-    <div class="container">
-        <div class="title">
+
+    <div class="container" style="  margin-right: 700px;">
+        <div class="title" style="  margin-right: 180px;">
             <h1>البيانات</h1>
             <h1>الشخصية</h1>
         </div>
@@ -153,7 +154,7 @@
 
                 <!---->
                 <label for="num-identity">
-                    <h3>رقم الهوية</h3>
+                    <h3 style="border-left: 62px #FBE4CA solid;">رقم الهوية</h3>
                 </label>
                 <input type="text" id="num-identity" value="<?php if (isset($_POST['num'])) {
                                                                 echo $_POST['num'];
@@ -172,7 +173,7 @@
                 <br>
 
                 <!---->
-                <label for="num-operator" class="english-name">
+                <label for="num-operator" style="border-left: 12px #FBE4CA solid;" class="english-name">
                     <h3>رقم المشغل ان وجد</h3>
                 </label>
                 <input type="text" id="num-operator" value="<?php if (isset($_POST['operatorNum'])) {
@@ -185,7 +186,7 @@
 
                 <!---->
                 <label for="rank" class="rank">
-                    <h3>المرتبة\الرتبة</h3>
+                    <h3 style="border-left: 45px #FBE4CA solid;">المرتبة\الرتبة</h3>
                 </label>
                 <input type="text" id="rank" value="<?php if (isset($_POST['state'])) {
                                                         echo $_POST['state'];
@@ -225,7 +226,7 @@
 
                 <!---->
                 <label for="num-phone">
-                    <h3>رقم الهاتف</h3>
+                    <h3 style="border-left: 65px #FBE4CA solid;">رقم الهاتف</h3>
                 </label>
                 <input type="text" id="num-phone" value="<?php if (isset($_POST['noMobile'])) {
                                                                 echo $_POST['noMobile'];
@@ -242,9 +243,56 @@
                 <!---->
 
                 <br>
-                <button type="submit" class="submit" name="submit">
-                    <h3>التالي</h3>
+                <!-- <div style="border-right: 110px #FBE4CA solid;color:black;" >
+                <p >
+                    أقر بصحة المعلومات ,اتعهد بالمحافظة على سرية المعلومات
+                    <br>
+                    حساب البريدالالكتروني الخاص بي وفق سياسة وانظمة
+                    <br>
+                    البوابة الالكترونية لوزارة الداخلية
+                </p>
+                </div>
+              
+                <br>
+               
+                <button type="submit" style="margin-right: 685px;" class="submit" id="submit" name="submit">
+                    <h3>أرسال</h3>
+                </button> -->
+                <div style="border-right: 110px #FBE4CA solid;color:black;display:flex;">
+
+
+                    <input style="margin-right:-150px;" type="checkbox" id="myCheck" onclick="myFunction()">
+
+                    <br>
+                    <span style="margin-right:-90px;">
+                        <p>
+                            أقر بصحة المعلومات ,اتعهد بالمحافظة على سرية المعلومات
+                            <br>
+                            حساب البريدالالكتروني الخاص بي وفق سياسة وانظمة
+                            <br>
+                            البوابة الالكترونية لوزارة الداخلية
+                        </p>
+                    </span>
+
+
+                </div>
+
+                <button id="text" style="display:none;margin-right: 685px; margin-top:15px;" type="submit" class="submit" name="submit">
+                    <h2>ارسال</h2>
                 </button>
+
+                <script>
+                    function myFunction() {
+                        var checkBox = document.getElementById("myCheck");
+                        var text = document.getElementById("text");
+                        if (checkBox.checked == true) {
+                            text.style.display = "block";
+                        } else {
+                            text.style.display = "none";
+                        }
+                    }
+                </script>
+
             </form>
 
         </div>
