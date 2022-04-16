@@ -18,4 +18,5 @@ noMobile int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 ALTER TABLE `admin` ADD UNIQUE(`email`); 
-INSERT INTO `admin`(`email`, `password`) VALUES ('admin1@admin.com',1234); 
+INSERT INTO `admin`(`email`, `password`) VALUES ('admin1@admin.com',1234);
+INSERT INTO `admin`(`email`, `password`) VALUES ('admin2@admin.com',123); 
